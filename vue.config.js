@@ -3,14 +3,13 @@ module.exports = {
         ? '/pwa01/'
         : '/',
     pwa: {
-        /*
+        // we want to get our custom worker - default is GenerateSw
         workboxPluginMode: 'InjectManifest',
         workboxOptions: {
             // swSrc is required in InjectManifest mode.
-            swSrc: 'service-worker.js',
+            swSrc: 'src/service-worker.js',
             // ...other Workbox options...
         },
-        */
         name: 'VUE-PWA',
         themeColor: '#42b983',
         msTileColor: '#42b983',
