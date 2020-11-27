@@ -1,6 +1,6 @@
 module.exports = {
     publicPath: process.env.NODE_ENV === 'production'
-        ? '/pwa01/'
+        ? '/pwa01/' // github repo name when using github pages
         : '/',
     pwa: {
         // we want to get our custom worker - default is GenerateSw
@@ -8,7 +8,6 @@ module.exports = {
         workboxOptions: {
             // swSrc is required in InjectManifest mode.
             swSrc: 'src/service-worker.js',
-            // ...other Workbox options...
         },
         name: 'VUE-PWA',
         themeColor: '#42b983',
@@ -16,7 +15,6 @@ module.exports = {
         appleMobileWebAppCache: 'yes',
         appleMobileWebAppCapable: 'yes',
         appleMobileWebAppStatusBarStyle: 'black',
-
         manifestOptions: {
             // eslint-disable-next-line @typescript-eslint/camelcase
             background_color: '#42b983'
